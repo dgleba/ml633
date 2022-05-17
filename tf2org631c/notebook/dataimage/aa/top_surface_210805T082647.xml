@@ -1,0 +1,26 @@
+<annotation>
+	<folder>through_cracks</folder>
+	<filename>top_surface_210805T082647.png</filename>
+	<path>C:\Users\ppatel\Documents\through_cracks\top_surface_210805T082647.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>670</width>
+		<height>7990</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>426</xmin>
+			<ymin>5606</ymin>
+			<xmax>475</xmax>
+			<ymax>5636</ymax>
+		</bndbox>
+	</object>
+</annotation>

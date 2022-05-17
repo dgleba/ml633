@@ -1,0 +1,11 @@
+find |sort > findfiles.txt
+date1=$(date +"_%Y.%m.%d_%b-%a_%H.%M.%S")
+
+tar -cvz \
+  --exclude={models/*,tmp/*,x/*,*.tgz,.ipynb_checkpoints/*,more/*,dataimage/*}  \
+  -f ../tf2org631c_$date1.tgz .
+
+# # larger tgz...
+# tar -cvz \
+#   --exclude={tmp/*,x/*,*.tgz,.ipynb_checkpoints/*,more/*,dataimage/*}  \
+#   -f ../tf2org631c_${date1}_larger.tgz .

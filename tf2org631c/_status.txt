@@ -1,0 +1,125 @@
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@  
+#@  tf2 docker official with object_detection_tutorial
+#@  
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   2022-05-09[May-Mon]21-41PM 
+
+cd /srv/test/tf2org631c
+
+cd /srv/test/tf2org631c02
+
+--
+
+use no token just  http://10.4.1.245:8890
+
+then paste token in form and use password `a`
+
+ref.
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/cpu-jupyter.Dockerfile
+
+add some of this to notebook below..
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md
+
+
+upload official tutorial notebook.
+https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/object_detection_tutorial.ipynb
+
+run each step.
+get lots of problems. fix each one and wonder why it doesn't work.
+
+
+_____________
+
+
+http://10.4.1.245:8889/?token=181a9df43aefbd49c26fc713ffafd9be9688c082b23a575f
+
+
+https://www.tensorflow.org/install/docker
+
+
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/auto_examples/index.html
+
+_____________
+
+=================================================
+
+old..
+
+mkdir -p ./home/dot/jupyter
+mkdir -p ./notebook/.keep
+
+
+=================================================
+
+
+# dgleba@SICS-GZPJL13 
+dira=/cygdrive/d/bag/tensorflow
+mkdir -p $dira; cd $dira
+git clone https://github.com/tensorflow/tensorflow.git tensorflow2 --depth=1
+
+# dgleba@SICS-GZPJL13 /cygdrive/c/0
+git clone https://github.com/tensorflow/models.git tensorflow2-models --depth=1
+
+_____________
+
+
+cd models/research/
+protoc object_detection/protos/*.proto --python_out=.
+%%bash
+cd models/research/ protoc object_detection/protos/*.proto --python_out=. bash: line 2: protoc: command not found
+
+0f8b58ac491808aa37ed197ce371940c47a0171aad2e5a7d
+
+==
+
+ans..
+
+%%bash
+apt install -y protobuf-compiler
+
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md
+
+
+_____________
+
+
+%%bash 
+cd models/research
+pip install .
+ERROR: Directory '.' is not installable.
+
+
+https://stackoverflow.com/questions/68223563/error-directory-is-not-installable-neither-setup-py-nor-pyproject-toml
+
+%%bash 
+cd models/research
+cp object_detection/packages/tf2/setup.py .
+# don't upgrade.. pip install . --upgrade
+
+_____________
+
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@  
+#@  
+#@  
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   2022-05-11[May-Wed]08-38AM 
+
+
+http://127.0.0.1:8888/?token=
+f03afcee9f1cc93c5cff1ac01e1d5dfad49f1bf2a9e4f25f
+
+
+AttributeError: module 'pyparsing' has no attribute 'downcaseTokens'
+
+=================================================
+
+%%bash
+apt update 
+apt install -y mc
+
+_____________
+
