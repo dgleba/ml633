@@ -27,3 +27,4 @@ tf2 offical docker image from docker hub
 object detection tutorial: 
 https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/object_detection_tutorial.ipynb
 
+
