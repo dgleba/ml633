@@ -1,0 +1,12 @@
+version: "3.6"
+services:
+  tf:
+    # http://10.4.1.245:8890
+    # build: .
+    image: tensorflow/tensorflow:2.6.0-jupyter
+    ports:
+      - "8891:8888"
+    volumes:
+      - ./content:/tf/content
+      - ./home/dot/jupyter:/root/.jupyter
+
