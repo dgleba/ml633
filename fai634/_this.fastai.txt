@@ -1,0 +1,34 @@
+
+_____________
+
+2022-05-29
+
+
+https://github.com/fastai/docker-containers
+
+
+https://github.com/fastai/docker-containers
+
+
+https://hub.docker.com/r/fastdotai/fastai/tags
+
+
+https://walkwithfastai.com/Object_Detection
+    Word of Warning:
+    show_results and predict both do not currently work. I'd recommend utilizing the IceVision library for your Object Detection needs.
+
+_____________
+
+
+RuntimeError: DataLoader worker (pid 379) is killed by signal: Bus error. It is possible that dataloader's workers are out of shared memory. Please try to raise your shared memory limit.
+
+ans.
+in dc.yml
+
+  fai:
+    shm_size: 16GB 
+
+_____________
+
+
+

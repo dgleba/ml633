@@ -1,0 +1,2 @@
+bash -li script.sh
+

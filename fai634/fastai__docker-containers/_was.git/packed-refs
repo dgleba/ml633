@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+970e0120bd98ec86870259db1daed30f151af0e3 refs/remotes/origin/dry
+302aac3c35a976dc21189d77b3fc2ac999f2de02 refs/remotes/origin/hamelsmu-patch-1
+4f5a6e3343201fe68f0ba7f72018707a4ade9ede refs/remotes/origin/master
+3719fa79f360d706434c5a648bdc878bc9964811 refs/remotes/origin/move-names
+0d275ea02d64734e8e5c27d7615fca07d9e937a8 refs/remotes/origin/neptune
