@@ -3,7 +3,7 @@
 # this copies the nginx config out of the mb1 dc service...
 #
 # get container name..
-dcservice=pyt
+dcservice=fai
 pth=/out
 #
 cname=$( docker inspect -f '{{.Name}}' $( docker-compose ps -q ${dcservice}) | cut -c2- )
